@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Pompiere');
+@import url('https://fonts.googleapis.com/css?family=Share');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+nav {
+  List-style-type:none;
+  font-size: 1.1rem;
+  position: fixed;
+  background: #0C0D0D;
+  width: 100%;
+  top: 0;
+}
+a {
+  margin:0;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 1rem;
+  float: left;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0.5rem;
+}
+.search-container {
+  float: right;
+  padding: 8px;
+  margin-top: 2px;
+  margin-right: 16px;
+  font-size: 17px;
+  border: none;
+}
+button {
+  cursor: pointer;
+}
+nav:hover, hover:active{
+  background-color: #B0B4B4;
+  text-decoration: none;
+  cursor: pointer;
+}
+header h1 {
+  position: absolute;
+  color: rgb(244, 248, 251);
+  font-size: 2rem;
+  line-height: 2em;
+  top: 4.3em;
+  left: -3em;
+  width: auto;
+  margin: 0;
+  padding: 1rem;
+  -webkit-transform: rotateZ(90deg); /* Safari */
+  transform: rotateZ(90deg); /* Standard syntax */
+  -webkit box sizing: border-box;
+  box-sizing: border-box;
+  background: #757779;
+}
+h1 {
+  display: block;
+  font size: 1.7em;
+}
+header {
+  display: flex;
+  top: 4.2em;
+  padding: 2em;
+  line-height: 2em;
+}
+.block { 
+  display: flex;
+  justify-content: space-between;
+}
+#about-johnson {
+  padding: 20px;
+}
+#career {
+ padding: 20px;
+}
+.state {
+   padding: 1em;
+}
+.childhood, .eton {
+  height: auto;
+  vertical-align: bottom;
+  width: 100%;
+}
+h2 {
+  float: right;
+  font-size: 1.7rem;
+  background: #EDF5F5;
+  padding: 1.5em;
+  font-family: 'Abril Fatface', cursive;
+}
+aside {
+  border-bottom: 1px solid;
+  padding: 15px 0 10px;
+}
+.column-layout {
+  display: flex;
+  flex-direction: row;
+}
+.early career, .Henley, .Mayor, .foreign {
+  padding: 10px 15px 10px 40px;
+  width: 250px;
+  margin-top: 10px;
+  line-height: 1.2rem;
+  justify-content: space-between;
+} 
+p {
+  font-family: 'Pompiere', cursive;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.image {
+ padding: 20px;
+}
+h3 {
+ font-family: 'Share', cursive; 
+}
+footer {
+  margin: 0.3%;
+  border: none;
+  background: #A1A6A6;
+  cursor: pointer;
+  padding: 0.9%;
+  display: absolute; 
+}
+footer > a {
+  padding: 5px;
+}
+footer > p{
+  text-align: center;
+}
+@media only screen and (max-width: 375px) {
+    /* For mobile phones: */
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .column-layout {
+    flex-wrap: wrap;
+      }
+  .block {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .banner {
+    height: auto;
+    width: 100%;
+  }
+    nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  } 
+  header {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    height: auto;
+    width: 100%;
+  }
+  header h1 {
+    top: 4.6em;
+    padding: 5px;
+  }
+  image {
+    padding: 20px;
+    margin: 0;
+  }
+  }
+@media screen and (max-width: 768px) and (orientation: portrait), (max-width: 768px){
+  .column-layout {
+    flex-wrap: wrap;
+      }
+  .block {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5px;
+  }
+  .banner {
+    height: auto;
+    width: 100%;
+  }
+    nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  } 
+  header {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0;
+  }
+  image {
+    padding: 0;
+    margin: 0;
+  }
+   .early career, .Henley, .Mayor, .foreign {
+  padding: 0;
+  }
+  .image {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+    /* For mobile phones: */
+  body {
+    padding: 20px;
+    margin: 10px;
+  }
+  .column-layout {
+    flex-wrap: wrap;
+      }
+  .block {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .banner {
+    height: auto;
+    width: 100%;
+  }
+    nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  } 
+  header {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    height: auto;
+    width: 100%;
+  }
+  .early career, .Henley, .Mayor, .foreign {
+  padding: 0;
+  }
+  .image {
+    width: auto;
+  }
+}
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+   body {
+    padding: 0;
+    margin: 0;
+  }
+  .state {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    }
+  .column-layout {
+    flex-wrap: wrap;
+    margin: 20px;
+      }
+  .block {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .banner {
+    height: auto;
+    width: 100%;
+  }
+    nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  } 
+  header {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    height: auto;
+    width: 100%;
+  }
+  .early career, .Henley, .Mayor, .foreign {
+    padding: 20px 15px 10px 40px;
+  }
+  .image {
+    width: 550px;
+    height: auto;
+  }
+    div, .Henley img {
+    height: auto;
+    }
+}
+ /* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+    padding: 0;
+    margin: 0;
+  }
+  .column-layout {
+    flex-wrap: wrap;
+      }
+  .block {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .banner {
+    height: auto;
+    width: 100%;
+  }
+    nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  } 
+  header {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    height: auto;
+    width: 100%;
+  }
+  .early career, .Henley, .Mayor, .foreign {
+    padding: 10px 15px 10px 40px;
+  }
+  .image {
+    width: 550px;
+    height: auto;
+  }
+    div, .Henley img {
+    height: auto;
+    }
+  h2 {
+/*     float: none; */
+    margin: 0;
+    }
+ header h1 {
+    left: -2em;
+    }
+ .state {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    }
+}
+ 
